@@ -1,0 +1,136 @@
+*{
+    font-family: 'Nerko One', cursive;
+}
+body{
+    background-color: #c8f2ff;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.game{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.rules{
+    margin-left: 1rem;
+    width: 25%;
+}
+.score{
+    margin-right: 1rem;
+}
+.divMensaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mensaje{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em;
+    border-radius: 1.4rem;
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+/* Cambiar color dependiendo de la distancia */
+.dCerca{
+    background: #EC4F24 ;
+}
+.mCaliente{
+    background: #FC960B;
+}
+.caliente{
+    background: #FFCB08;
+}
+.tibio{
+    background: #83FF6B;
+}
+.frio{
+    background: #6BFFE4;
+}
+.mFrio{
+    background: #6BA3FF;
+}
+.congelado{
+    background: #438AFF;
+}
+@media (max-width: 1000px){
+    .game{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .rules{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .find{
+        width: 99%;
+    }
+    .score{
+        width: 99%;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+}
+@media (max-width: 900px){
+    .game{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .rules{
+        width: 89%;
+        margin: 5%;
+        margin-right: 5%;
+    }
+    .find{
+        width: 99%;
+    }
+    .score{
+        width: 99%;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+}
+@media (max-width: 500px){
+    .game{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .rules{
+        width: 89%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .find{
+        width: 99%;
+    }
+    .score{
+        width: 89%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    img{
+        display: block;
+        margin: auto;
+
+        width: 80%;
+        height: 80%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+}
