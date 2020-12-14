@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="find.css">
+    <title>Encuentra el tesoro</title>
+</head>
+<body>
+    <div class="game">
+        <div class="item rules">
+            <h2>¿Cómo se juega?</h2>
+            <p>El objetivo de este juego es encontrar el tesoro dando clicks en el mapa y guiarte por las pistas que te va dando el juego, entre mas caliente, mas cerca estás del tesoro, y entre más frio, mas lejos estás</p>
+            <p>Suerte y que encuentres el tesoro 🔎📦</p>
+        </div>
+        <div class="item find">
+            <h1>Encuentra el tesoro</h1>
+            <img src="treasuremap.png" id="map" width="400" height="400" draggable="false" class="mapa">
+
+            <div id="distance" class="divMensaje"></div>
+        </div>
+        <div class="item score">
+            <div id="score" class="puntaje">
+                <p class="pScore">No has encontrado ningún tesoro</p>
+            </div>
+            <div id="record" class="record"></div>
+        </div>
+    </div>
+    <script src="treasure.js"></script>
+</body>
+</html>
